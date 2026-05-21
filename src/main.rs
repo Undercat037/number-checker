@@ -1,3 +1,13 @@
+/*
+Copyright (C) 2026 Undercat037
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+ A simple OSINT tool for searching database records by phone number
+*/
+
 use csv::Reader;
 use serde::Deserialize;
 use std::error::Error;
