@@ -1,2 +1,2 @@
-# number-cheker
+# number-checker
 A simple OSINT tool for searching database records by phone number
