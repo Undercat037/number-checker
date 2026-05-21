@@ -1,0 +1,11 @@
+id,name,birth_date,phone_num,org,weapon_licence,email
+1,Eliot Alderson,1998-09-17,380661234567,fsociety,false,eliotalderson@ecorp.org
+2,Darlene Alderson,2000-11-05,380667654321,fsociety,true,darlene@darkarmy.net
+3,Tyrell Wellick,1994-03-12,380509998877,E Corp,true,t.wellick@ecorp.org
+4,Angela Moss,1999-02-24,380931112233,E Corp,false,amoss@allsafe.com
+5,Neo Anderson,1996-03-11,380445550101,Zion,false,neo@matrix.net
+6,Miles Dyson,1978-08-21,380674443322,Cyberdyne Systems,false,mdyson@cyberdyne.com
+7,Phillip Price,1964-12-05,380501234567,E Corp,true,pprice@ecorp.org
+8,Dominique DiPierro,1995-05-10,380638887766,FBI,true,ddipierro@fbi.gov
+9,Lain Iwakura,2001-07-06,380990001122,The Wired,false,lain@wired.jp
+10,White Rose,1975-01-18,380447778899,Dark Army,true,zhang@state.gov.cn

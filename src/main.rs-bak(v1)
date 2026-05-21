@@ -1,0 +1,82 @@
+use std::io;
+
+fn main() {
+    println!("===============");
+    println!("TESTING PROGRAM");
+    println!("===============");
+
+    println!("Number Checker // OSINT ");
+
+    // Database
+    const DB1: (&str, i32, bool, &str, &str) =
+        ("Eliot Alderson", 28, true, "380661234567", "fsociety");
+    const DB2: (&str, i32, bool, &str, &str) =
+        ("Darlene Alderson", 26, true, "380671234567", "fsociety");
+    const DB3: (&str, i32, bool, &str, &str) =
+        ("Tyrell Wellick", 34, false, "380501234567", "E Corp");
+    const DB4: (&str, i32, bool, &str, &str) = ("Angela Moss", 28, true, "380631234567", "E Corp");
+    const DB5: (&str, i32, bool, &str, &str) =
+        ("Phillip Price", 62, false, "380671234567", "E Corp");
+    const DB6: (&str, i32, bool, &str, &str) =
+        ("Whiterose", 55, false, "380501234567", "Dark Army");
+
+    loop {
+        let mut number = String::new();
+        println!("Enter the number phone:");
+        io::stdin().read_line(&mut number).expect("Error read");
+
+        let trimm = number.trim();
+
+        if !trimm.chars().all(|c| c.is_ascii_digit()) {
+            println!("Error: only digits allowed\n");
+            continue;
+        }
+
+        let len = trimm.len();
+
+        if len == 10 || len == 12 {
+            let full_num: String = if len == 10 {
+                format!("38{}", trimm)
+            } else {
+                trimm.to_string()
+            };
+
+            if full_num == DB1.3 {
+                println!(
+                    "Name: {} | Age: {} | Pet: {} | Phone: {} | Org: {}\n",
+                    DB1.0, DB1.1, DB1.2, DB1.3, DB1.4
+                );
+            } else if full_num == DB2.3 {
+                println!(
+                    "Name: {} | Age: {} | Pet: {} | Phone: {} | Org: {}\n",
+                    DB2.0, DB2.1, DB2.2, DB2.3, DB2.4
+                );
+            } else if full_num == DB3.3 {
+                println!(
+                    "Name: {} | Age: {} | Pet: {} | Phone: {} | Org: {}\n",
+                    DB3.0, DB3.1, DB3.2, DB3.3, DB3.4
+                );
+            } else if full_num == DB4.3 {
+                println!(
+                    "Name: {} | Age: {} | Pet: {} | Phone: {} | Org: {}\n",
+                    DB4.0, DB4.1, DB4.2, DB4.3, DB4.4
+                );
+            } else if full_num == DB5.3 {
+                println!(
+                    "Name: {} | Age: {} | Pet: {} | Phone: {} | Org: {}\n",
+                    DB5.0, DB5.1, DB5.2, DB5.3, DB5.4
+                );
+            } else if full_num == DB6.3 {
+                println!(
+                    "Name: {} | Age: {} | Pet: {} | Phone: {} | Org: {}\n",
+                    DB6.0, DB6.1, DB6.2, DB6.3, DB6.4
+                );
+            } else {
+                println!("Number not found in database\n");
+            }
+        } else {
+            println!("Not a number phone (length: {})(not 10/12)\n", len);
+        }
+    }
+}
+
